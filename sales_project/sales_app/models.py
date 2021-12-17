@@ -19,3 +19,5 @@ class Sales(models.Model):
     unit_price = models.DecimalField(decimal_places=2, max_digits=10)
     total_price = models.IntegerField()
 
+    def __str__(self):
+        return product.product_name
